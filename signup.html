@@ -1,0 +1,167 @@
+
+    <!DOCTYPE html>
+    <html xmlns='http://www.w3.org/1999/xhtml'>
+    <head>
+         <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+
+        <title>
+            Sign Up
+        </title>
+        <!-- Style -- Can also be included as a file usually style.css -->
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: black;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            /* Add padding to containers */
+            .container {
+                padding: 16px;
+                background-color: white;
+            }
+
+            /* Full-width input fields */
+            input[type=text], input[type=password] {
+                width: 100%;
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                display: inline-block;
+                border: none;
+                background: #f1f1f1;
+            }
+
+            input[type=text]:focus, input[type=password]:focus {
+                background-color: #ddd;
+                outline: none;
+            }
+
+            /* Overwrite default styles of hr */
+            hr {
+                border: 1px solid #f1f1f1;
+                margin-bottom: 25px;
+            }
+
+            /* Set a style for the submit button */
+            .registerbtn {
+                background-color: #4CAF50;
+                color: white;
+                padding: 16px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+                opacity: 0.9;
+            }
+
+            .registerbtn:hover {
+                opacity: 1;
+            }
+
+          
+            a {
+                color: dodgerblue;
+            }
+
+            .signin {
+                background-color: #f1f1f1;
+                text-align: center;
+            }
+           #p1{
+               color:white;
+           }
+        </style>
+
+    </head>
+    <body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="home.html">Home</a></li>                
+                <li><a href="applications.html">Applications</a></li>
+                <li><a href="Aboutus.html">About us</a></li>            
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <form name="New User" action="#href" method="post">
+        <!-- Table goes in the document BODY -->
+        <div class="container">
+            <h1  align="center">Register</h1>
+            <p  align="center">Please fill in this form to create an account.</p>
+            <hr>
+
+            <label for="First Name"><b>First Name </b></label>
+            <input type="text" placeholder="Enter Your Name" name="First Name" required>
+
+            <label for="Last Name"><b>Last Name </b></label>
+            <input type="text" placeholder="Enter Your Name" name="Last Name" required>
+
+            <label for="Date of Birth"><b>Date of Birth</b></label>
+            <input type="date" placeholder="Enter Your Name" name="Date of Birth" required>
+            <br>
+            <br>
+            <br>
+            
+                <label for="Company"><b>  Company Name</b></label>
+                <input type="text" placeholder="Enter Your Company Name" name="email" required>
+
+
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                <hr>
+                <center>
+                <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+            </center>
+
+                <button type="submit" class="registerbtn">Register</button>
+        </div>
+
+        <div class="container signin">
+            <p>Already have an account? <a href="login.html">Sign in</a>.</p>
+        </div>
+
+    </form>
+    <footer>
+    <center>
+  <p id="p1">Contact us via:</p> <br>
+  <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i>Facebook</a>
+  <a href="https://mail.google.com/mail/u/0/#inbox"><i class="fas fa-envelope"></i>Gmail</a> 
+  <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i>Linkdin</a> 
+  </center>
+  <br>
+  <p><a href="#">Terms of Use</a>| <a href="#">Privacy Policy</a> | <a href="#">Cookie Policy</a>| <a href="#">Ad Choices</a> | <a href="#">&copy 2018 ERP Systems</a></p>
+</footer>
+    </body>
+    </html>
